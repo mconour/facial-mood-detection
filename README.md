@@ -1,2 +1,3 @@
 1. JavaScript
-2. Face API JS library built on Tensor Flow
+2. TensorFlow
+3. Face-api.js
