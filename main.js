@@ -21,6 +21,9 @@ function startVideo() {
 
 /* setting up the facial detection */
 video.addEventListener('play', () => {
+const canvas = faceapi.createCanvasFromMedia(video)
+document.body.append(canvas);
+
     setInterval(async () => {
         // gets all faces inside of webcam image each time called
         const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions()
