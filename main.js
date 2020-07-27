@@ -10,7 +10,7 @@ Promise.all([
 
 
 // hook up webcam to video element
-startVideo = () => {
+function startVideo() {
     navigator.getUserMedia({
         video: {}
     },
@@ -19,4 +19,9 @@ startVideo = () => {
     )
 }
 
-startVideo()
+/* setting up the facial detection */
+video.addEventListener('play', () => {
+    setInterval(async () => {
+        const detections = await faceapi.detectAllFaces()
+    }, 100)
+})
