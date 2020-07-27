@@ -21,8 +21,14 @@ function startVideo() {
 
 /* setting up the facial detection */
 video.addEventListener('play', () => {
+   
+    // adding canvas element
 const canvas = faceapi.createCanvasFromMedia(video)
-document.body.append(canvas);
+document.body.append(canvas)
+
+// gets display size of current video
+const displaySize = {width: video.width, height: video.height}
+
 
     setInterval(async () => {
         // gets all faces inside of webcam image each time called
