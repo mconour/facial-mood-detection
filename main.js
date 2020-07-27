@@ -46,8 +46,9 @@ video.addEventListener('play', () => {
         // clear entire canvas
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
 
-        // draw elements inside canvas        
+        // draws elements inside canvas        
         faceapi.draw.drawDetections(canvas, resizedDetections)
         faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
+        faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
     }, 100)
 })
