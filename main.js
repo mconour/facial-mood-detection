@@ -32,7 +32,7 @@ video.addEventListener('play', () => {
         height: video.height
     }
 
-
+    // this will match entire canvas to display size
     faceapi.matchDimensions(canvas, displaySize)
 
     setInterval(async () => {
@@ -43,11 +43,11 @@ video.addEventListener('play', () => {
         // displays elements inside canvas properly
         const resizedDetections = faceapi.resizeResults(detections, displaySize)
 
-        // clear canvas
+        // clear entire canvas
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
 
         // draw elements inside canvas        
         faceapi.draw.drawDetections(canvas, resizedDetections)
-
+        faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
     }, 100)
 })
