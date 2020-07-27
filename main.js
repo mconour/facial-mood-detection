@@ -40,11 +40,14 @@ video.addEventListener('play', () => {
         const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceExpressions()
         console.log(detections)
 
-        // displays elements inside canvas
+        // displays elements inside canvas properly
         const resizedDetections = faceapi.resizeResults(detections, displaySize)
 
+        // clear canvas
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
-       faceapi.draw.drawDetections(canvas, resizedDetections)
+
+        // draw elements inside canvas        
+        faceapi.draw.drawDetections(canvas, resizedDetections)
 
     }, 100)
 })
