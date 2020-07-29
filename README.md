@@ -1,3 +1,7 @@
-1. JavaScript
-2. TensorFlow
-3. Face-api.js
+# Facial Mood Detection Application
+
+```
+Frameworks & Libraries: TensorFlow, Face-api.js   
+Other: Lodash, CSS, HTML
+Languages: JavaScript
+```
