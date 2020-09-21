@@ -6,5 +6,5 @@ Other: Lodash, CSS, HTML
 Languages: JavaScript
 ```
 
-![Facial Mood Detection Application](imgs/screenshot01.png)
-![Facial Mood Detection Application](imgs/screenshot02.png)
+![Facial Mood Detection Application](imgs/screenshot03.png)
+![Facial Mood Detection Application](imgs/screenshot04.png)
