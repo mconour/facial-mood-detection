@@ -77,4 +77,3 @@ Enjoy real-time facial mood detection with this program!
 For more information on FaceAPI, refer to their official documentation: [FaceAPI GitHub Repository](https://github.com/justadudewhohacks/face-api.js).
 
 ![Facial Mood Detection Application](imgs/screenshot00.png)
-![Facial Mood Detection Application](imgs/screenshot01.png)
