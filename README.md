@@ -1,9 +1,6 @@
 # Facial Mood Detection Application
 
-This JavaScript program uses the FaceAPI library to detect facial features and expressions in a live video stream from a user's webcam. It can identify faces, their landmarks, and their expressions in real-time. Below are the key components and functionalities of the program.
-
-![Facial Mood Detection Application](imgs/screenshot00.png)
-![Facial Mood Detection Application](imgs/screenshot01.png)
+This JS program uses the FaceAPI library to detect facial features and expressions in a live video stream from a user's webcam. It can identify faces, expressions, and a subject's landmarks in real-time. Below are the key components and functionalities of the program.
 
 ## Prerequisites
 
@@ -78,3 +75,6 @@ Enjoy real-time facial mood detection with this program!
 **Remember to cite and credit the FaceAPI library if you use it in your project.**
 
 For more information on FaceAPI, refer to their official documentation: [FaceAPI GitHub Repository](https://github.com/justadudewhohacks/face-api.js).
+
+![Facial Mood Detection Application](imgs/screenshot00.png)
+![Facial Mood Detection Application](imgs/screenshot01.png)
